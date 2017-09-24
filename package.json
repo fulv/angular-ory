@@ -43,8 +43,6 @@
   "devDependencies": {
     "@angular/compiler-cli": "^4.2.4",
     "@angular/platform-server": "^4.3.3",
-    "@types/jasmine": "2.5.38",
-    "@types/node": "^6.0.42",
     "rimraf": "^2.5.4",
     "typescript": "2.3.4"
   },
@@ -58,6 +56,8 @@
     "@angular/platform-browser": "^4.4.3",
     "angular-traversal": "^1.0.2",
     "angular2-schema-form": "^1.0.0-beta.12",
+    "@types/jasmine": "2.5.38",
+    "@types/node": "6.0.60",
     "core-js": "^2.5.1",
     "rxjs": "^5.4.3",
     "zone.js": "^0.8.17"
