@@ -1,0 +1,65 @@
+{
+  "name": "angular-ory",
+  "version": "1.0.0",
+  "description": "An Angular library for the ORY editor.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "clean": "rimraf dist/",
+    "test": "npm run build && rm -rf ./tests/src/dist && cp -r ./dist ./tests/src/dist && cd tests && ng test --single-run",
+    "build:aot": "ngc -p tsconfig.json",
+    "build:jit": "tsc -p tsconfig.json",
+    "build": "npm run clean && npm run build:aot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fulv/angular-ory.git"
+  },
+  "keywords": [
+    "angular",
+    "ory",
+    "editor"
+  ],
+  "author": {
+    "name": "Fulvio Casali",
+    "email": "fulviocasali@gmail.com"
+  },
+  "contributors": [],
+  "license": "MIT",
+  "homepage": "https://github.com/fulv/angular-ory.git",
+  "bugs": "https://github.com/fulv/angular-ory.git/issues",
+  "peerDependencies": {
+    "ory-editor": "^0.2.24",
+    "@angular/common": "^4.3.3",
+    "@angular/compiler": "^4.3.3",
+    "@angular/core": "^4.3.3",
+    "@angular/forms": "^4.3.3",
+    "@angular/http": "^4.3.3",
+    "@angular/platform-browser": "^4.3.3",
+    "core-js": "^2.4.1",
+    "rxjs": "^5.0.1",
+    "zone.js": "^0.8.5"
+  },
+  "devDependencies": {
+    "@angular/compiler-cli": "^4.2.4",
+    "@angular/platform-server": "^4.3.3",
+    "@types/jasmine": "2.5.38",
+    "@types/node": "^6.0.42",
+    "rimraf": "^2.5.4",
+    "typescript": "2.3.4"
+  },
+  "dependencies": {
+    "ory-editor": "^0.2.24",
+    "@angular/common": "^4.4.3",
+    "@angular/compiler": "^4.4.3",
+    "@angular/core": "^4.4.3",
+    "@angular/forms": "^4.4.3",
+    "@angular/http": "^4.4.3",
+    "@angular/platform-browser": "^4.4.3",
+    "angular-traversal": "^1.0.2",
+    "angular2-schema-form": "^1.0.0-beta.12",
+    "core-js": "^2.5.1",
+    "rxjs": "^5.4.3",
+    "zone.js": "^0.8.17"
+  }
+}
